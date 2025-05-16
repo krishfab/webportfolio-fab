@@ -1,0 +1,151 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+nav a {
+	color: #FFFFFF !important;
+
+	font-family: "Limelight", sans-serif !important;
+	font-weight: 700 !important;
+	font-style: normal;
+	font-size: 20px;
+  margin: 10px;
+   
+}
+
+#nav-bar{
+	
+	background: #FFD6D6;
+  position: fixed;
+  min-width: 100vw;
+}
+
+#mypicture {
+    width: 500px;
+    height: 500px;
+    margin-top: 50px;
+}
+
+#header-landing {
+  font-family: "Limelight", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 50px;
+  color: #FFFFFF !important;
+  text-shadow: 2px 2px 5px pink;
+
+}
+
+#header2-lan{
+  font-family: "Limelight", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: #224C98 !important;
+  font-style: italic !important;
+
+}
+
+#landing {
+
+	background:  linear-gradient(0deg, rgba(255 213 223 / 54%), rgba(255 213 223 / 69%)), 
+  url("./images/landingbg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	color: #825656;
+
+  font-family: "Limelight", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  text-align: center;
+  min-height: 100vh;
+  min-width: 100wh;
+}
+
+#myprojectsmain {
+	background: linear-gradient(0deg, rgba(253 221 230 / 54%), rgba(253 221 230 / 69%)), 
+  url("./images/bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#myprojectsmain img {
+  width: 250px;
+  height: 250px;
+}
+
+#heading-projects { 
+     text-align: center;
+      font-family: "Notable", sans-serif !important;
+     font-weight: 700;
+     font-size: 50px;
+     font-style: bold !important; }
+
+#card-1 {
+  background: #DCA1A1 !important;
+}
+
+#card-2 {
+  background: #FFD6D6;
+}
+
+#tools{
+     background: linear-gradient(0deg, rgba(253 221 230 / 54%), rgba(253 221 230 / 69%)), 
+  url("./images/bg3.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#toolsheader {
+   color: #224C98 !important;
+   text-align: center;
+  font-family: "Poetsen One", sans-serif !important;
+  font-weight: 700;
+  font-size:  50px;
+  font-style: normal;
+}
+
+#tools img{
+    height: 200px;
+    width: 200px;
+   
+}
+
+#contacts {
+background: #DCA1A1;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#contact-header {
+  text-align: center;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 700;
+  font-size:  50px;
+  font-style: normal;
+}
+
+#contacts img {
+  height: 50px;
+  width: 50px;
+}
+
+#contactform {
+  width: 100wh;
+}
+
+#submit-button {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: #825656 !important;
+}
+
+#footer {
+  background: #FFD6D6;
+  width: 100wh;
+}
+
