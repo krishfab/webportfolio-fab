@@ -7,11 +7,12 @@
 nav a {
 	color: #FFFFFF !important;
 
-	font-family: "Limelight", sans-serif !important;
+	font-family: "Poetsen One", sans-serif;
 	font-weight: 700 !important;
 	font-style: normal;
-	font-size: 20px;
+	font-size: 25px !important;
   margin: 10px;
+  text-shadow: 2px 2px 5px skyblue;
    
 }
 
@@ -29,7 +30,7 @@ nav a {
 }
 
 #header-landing {
-  font-family: "Limelight", sans-serif;
+  font-family: "Bungee Shade", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 50px;
@@ -39,10 +40,10 @@ nav a {
 }
 
 #header2-lan{
-  font-family: "Limelight", sans-serif;
+   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 30px;
-  color: #224C98 !important;
+  color: #93B1B5 !important;
   font-style: italic !important;
 
 }
@@ -56,36 +57,36 @@ nav a {
 
 	color: #825656;
 
-  font-family: "Limelight", sans-serif;
-  font-weight: 400;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 300;
   font-style: normal;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
   min-height: 100vh;
   min-width: 100wh;
 }
 
-#myprojectsmain {
+#projects {
 	background: linear-gradient(0deg, rgba(253 221 230 / 54%), rgba(253 221 230 / 69%)), 
   url("./images/bg2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#myprojectsmain img {
+#projects img {
   width: 250px;
   height: 250px;
 }
 
 #heading-projects { 
      text-align: center;
-      font-family: "Notable", sans-serif !important;
+     font-family: "Fascinate Inline", system-ui;
      font-weight: 700;
      font-size: 50px;
-     font-style: bold !important; }
+      text-shadow: 2px 2px 5px skyblue; }
 
 #card-1 {
-  background: #DCA1A1 !important;
+  background: #95B9C7 !important;
 }
 
 #card-2 {
@@ -93,19 +94,21 @@ nav a {
 }
 
 #tools{
-     background: linear-gradient(0deg, rgba(253 221 230 / 54%), rgba(253 221 230 / 69%)), 
+  background: linear-gradient(0deg, rgba(253 221 230 / 54%), rgba(253 221 230 / 69%)), 
   url("./images/bg3.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 #toolsheader {
-   color: #224C98 !important;
-   text-align: center;
-  font-family: "Poetsen One", sans-serif !important;
-  font-weight: 700;
+  text-align: center;
+   font-family: "Bungee Shade", sans-serif;
+  font-weight: 500;
   font-size:  50px;
+  letter-spacing: 2px;
   font-style: normal;
+  color: #694C45;
+   text-shadow: 2px 2px 5px white;
 }
 
 #tools img{
@@ -114,24 +117,41 @@ nav a {
    
 }
 
+#tools h3 {
+  font-family: "Rubik Distressed", system-ui;
+  color: #BE4E71;
+  font-weight: 500;
+  font-style: bold;
+  font-size: 35px;
+  color: #BA867B;
+  text-shadow: 2px 2px 5px white;
+}
+
 #contact {
-background: #DCA1A1;
+ background: linear-gradient(0deg, rgba(253 221 230 / 54%), rgba(253 221 230 / 69%)), 
+  url("./images/bg5.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 #contact-header {
   text-align: center;
+  font-size: 50px;
+  padding: 10px;
+  color: #FFFFFF !important;
+
   font-family: "Poetsen One", sans-serif;
-  font-weight: 700;
-  font-size:  50px;
+  font-weight: 800;
   font-style: normal;
+  text-shadow: 2px 2px 5px pink;
+
 }
 
 #contact img {
   height: 50px;
   width: 50px;
 }
+
 
 #contactform {
   width: 100wh;
@@ -141,11 +161,14 @@ background: #DCA1A1;
   font-family: "Poetsen One", sans-serif;
   font-weight: 400;
   font-style: normal;
-  background: #825656 !important;
+  background: #95B9C7 !important;
 }
 
 #footer {
   background: #FFD6D6;
   width: 100wh;
+  font-family: "Montserrat", monospace;
+  font-weight: 300px;
+  font-style: normal;
 }
 
