@@ -10,71 +10,101 @@ nav a {
 	font-family: "Poetsen One", sans-serif;
 	font-weight: 700 !important;
 	font-style: normal;
-	font-size: 25px !important;
-  margin: 10px;
-  text-shadow: 2px 2px 5px skyblue;
+	font-size: 20px !important;
+  margin: 5px;
+  text-shadow: 2px 2px 5px #A6B6CF;
    
 }
 
 #nav-bar{
 	
-	background: #FFD6D6;
+background: #E8C4E2;
   position: fixed;
   min-width: 100vw;
+  z-index: 1000;
+}
+
+nav img {
+  width: 70px;
 }
 
 #mypicture {
-    width: 500px;
-    height: 500px;
+    max-width: auto;
+    max-height: auto;
     margin-top: 50px;
+    animation-duration: 0.5s;
+    animation-name: spin;
+    animation-timing-function: linear;
+}
+
+
+@keyframes spin{
+  0%{
+
+  }
+  50%{
+    scale: 2;
+    transform: rotate(0);
+    border-radius: 0;
+  }
+  100%{
+    transform: rotate(360deg);
+    border-radius: 50%;
+    scale: 2;
+  }
 }
 
 #header-landing {
   font-family: "Bungee Shade", sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   font-style: normal;
-  font-size: 50px;
-  color: #FFFFFF !important;
-  text-shadow: 2px 2px 5px pink;
+  font-size: 40px;
+  color: #CDB4DA !important;
+  text-shadow: 2px 2px 5px white;
 
 }
 
 #header2-lan{
    font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 25px;
   color: #93B1B5 !important;
   font-style: italic !important;
 
 }
 
 #landing {
-
-	background:  linear-gradient(0deg, rgba(255 213 223 / 54%), rgba(255 213 223 / 69%)), 
-  url("./images/landingbg.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-
-	color: #825656;
-
+  background: linear-gradient(0deg, rgba(213 240 236 / 30%), rgba(213 240 236 / 30%)),
+  url("./images/landingbg (4).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #878793 !important;
+  text-shadow: 2px 2px 5px white;
   font-family: "Poetsen One", sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 18px;
   text-align: center;
   min-height: 100vh;
-  min-width: 100wh;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+#landing.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #projects {
-	background: linear-gradient(0deg, rgba(253 221 230 / 54%), rgba(253 221 230 / 69%)), 
-  url("./images/bg2.jpg");
+background: /*linear-gradient(0deg, rgba(213 240 236 / 50%), rgba(213 221 230 / 50%)), */
+  url("./images/bg8.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #projects img {
-  width: 250px;
+  width: 200px;
   height: 250px;
 }
 
@@ -86,16 +116,25 @@ nav a {
       text-shadow: 2px 2px 5px skyblue; }
 
 #card-1 {
-  background: #95B9C7 !important;
+  background: #BEE0FE !important;
+}
+
+#card-1:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 #card-2 {
-  background: #FFD6D6;
+  background: #FFDAE1;
 }
+
+#card-2:hover{
+  transform: scale(1.1);
+  transition: 0.5s;}
 
 #tools{
   background: linear-gradient(0deg, rgba(253 221 230 / 54%), rgba(253 221 230 / 69%)), 
-  url("./images/bg3.jpg");
+  url("./images/bg3.jpg") ;
   background-repeat: no-repeat;
   background-size: 100%;
 }

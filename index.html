@@ -27,6 +27,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <img src="./images/logonavbar.png">
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
       	<li class="nav-item">
           <a class="nav-link" href="#landing">Home</a>
@@ -47,33 +48,45 @@
   </div>
 </nav>
 
- <section id="landing" class="container-fluid min-wh-100 min-vh-100 m-0 p-0">
-    <div class=" p-5 justify-content-center p-5 text-center">
-    <img id="mypicture" src="./images/Mypicture.jpg" class="img-fluid border border-info rounded-circle img-center">
-   </div>
-    <div id="introduction" class=" text-center p-5 container-fluid">
-      <h1 id="header-landing">Krisha -Mae Fabonan</h1>
-      <h2 id="header2-lan">Full Stack Web Developer</h2>
-      <p>Hi! My nickname is Krisha. I am 27 years old. I am currently residing at Quezon City. I am the type of person who is curious about everything, loves to getting out of the comfort zone because I believe that growth only starts when you do things that you are not comfortable and I also love exploring a lot.</p>
+<section id="landing" class="container-fluid min-vh-100 d-flex align-items-center justify-content-center bg-dark text-white">
+  <div class="container py-5">
+    <div class="row align-items-center text-center text-md-start">
+
+    
+      <div class="col-12 col-md-5 mb-4 mb-md-0 order-1 order-md-2">
+        <img id="mypicture" src="./images/Mypicture.png" class="img-fluid rounded-3" alt="Krisha's Picture">
+      </div>
+
+      <!-- Introduction -->
+      <div id="introduction" class="col-12 col-md-7 p-3 order-2 order-md-1">
+        <h1 id="header-landing" class="display-5 fw-bold">Krisha-Mae Fabonan</h1>
+        <h2 id="header2-lan" class="fs-4 text-info">Full Stack Web Developer</h2>
+        <p class="mt-3">
+          Hi! My name is Krisha, and I’m 27 years old, currently living in Quezon City. I’m a naturally curious person who loves stepping out of my comfort zone because I believe that true growth happens when we challenge ourselves. I’m passionate about exploring new ideas, places, and experiences, always eager to learn and grow.
+        </p>
+        <p>
+          This mindset has guided me throughout my diverse career—starting in customer service, sales and marketing, and administrative roles—where I developed strong communication, problem-solving, and organizational skills. Over time, my curiosity for technology and passion for continuous learning inspired me to pivot into the tech industry. Now, I’m focused on building a career where I can combine my people-centered experience with technical skills to create meaningful solutions and contribute to innovative teams.
+        </p>
+      </div>
+
+    </div>
   </div>
-</div>
 </section>
 
-<!-- my projects section 1-->
 
 <section id="projects">
 
  <section id="myprojects1"class="container-fluid p-5 text-white">
     <div class="row justify-content-center">
-    	<h3 id="heading-projects" class="mt-5 text-center">My Projects</h3>
-    <div class="flex-sm-column flex-md-row d-md-flex justify-content-center gap-1">
-        	
+      <h3 id="heading-projects" class="m-5 text-center">My Projects</h3>
+    <div class="flex-sm-column flex-md-row d-md-flex justify-content-center gap-2">
+          
 
 <!-- E-Commerce API -->
-    <div id="card-1"class="card text-white p-0 col-md-4">
+    <div id="card-1"class="card text-white p-2 col-md-4 m-2">
               <img
                 src="./images/project1.jpg"
-                class="img-fluid w-100 border border-0 rounded-2 m-0 gap-2 p-2"
+                class="img-fluid w-100 border border-0 rounded-2"
                 alt="E-Commerce APIr"
               />
         <div class="card-body">
@@ -89,9 +102,9 @@
         </div>
 
 <!-- Course Booking API Documentation -->
-    <div id="card-2"class="card  text-white p-0 col-md-4">
+    <div id="card-2"class="card  text-white p-2 col-md-4 m-2">
     <img src="./images/project2.jpg"
-     class="img-fluid w-100 border border-0 rounded-2 m-0 gap-2 p-2"
+     class="img-fluid w-100 border border-0 rounded-2 "
      alt="Course Booking API Documentation" />
   <div class="card-body">
                 <h5 class="card-title">Course Booking API Documentation</h5>
@@ -103,9 +116,9 @@
 
 <!-- Course Booking App -->
 
-    <div id="card-1"class="card  text-white p-0 col-md-4">
+    <div id="card-1"class="card  text-white p-2 col-md-4 m-2">
     <img src="./images/project3.png"
-         class="img-fluid w-100 border border-0 rounded-2 m-0 gap-2 p-2"
+         class="img-fluid w-100 border border-0 rounded-2"
          alt="HVAC Technicians"  />
              
               <div class="card-body">
@@ -123,14 +136,14 @@
 
 <section id="myprojects2"class="container-fluid text-white p-5">
     <div class="row justify-content-center">
-    <div class="flex-sm-column flex-md-row d-md-flex justify-content-center gap-1">
-        	
+    <div class="flex-sm-column flex-md-row d-md-flex justify-content-center gap-2">
+          
 
 <!-- E-Commerce App -->
-    <div id="card-1" class="card text-white p-0 col-md-4">
+    <div id="card-1" class="card text-white p-2 m-2 col-md-4 m-1">
               <img
                 src="./images/project1.jpg"
-                class="img-fluid w-100 border border-0 rounded-2 m-0 gap-2 p-2"
+                class="img-fluid w-100 border border-0 rounded-2"
                 alt="E-Commerce APIr"
               />
         <div class="card-body">
@@ -142,9 +155,9 @@
         </div>
 
 <!-- Airline Booking System Mockup-->
-    <div id="card-2" class="card text-white p-0 col-md-4">
+    <div id="card-2" class="card text-white p-2 col-md-4 m-2">
     <img src="./images/project2.jpg"
-     class="img-fluid w-100 border border-0 rounded-2 m-0 gap-2 p-2"
+     class="img-fluid w-100 border border-0 rounded-2"
      alt="Course Booking API Documentation" />
   <div class="card-body">
                 <h5 class="card-title">Airline Booking System Mockup</h5>
@@ -156,9 +169,9 @@
 
 <!-- Airline Booking System Prototype -->
 
-    <div id="card-1"  class="card  text-white p-0 col-md-4">
+    <div id="card-1"  class="card  text-white p-2 col-md-4 m-2">
     <img src="./images/project3.png"
-         class="img-fluid w-100 border border-0 rounded-2 m-0 gap-2 p-2"
+         class="img-fluid w-100 border border-0 rounded-2"
          alt="HVAC Technicians"  />
              
               <div class="card-body">
@@ -178,14 +191,14 @@
 
  <section id="myprojects3"class="container-fluid p-5 text-white">
     <div class="row justify-content-center">
-    <div class="flex-sm-column flex-md-row d-md-flex justify-content-center gap-1">
+    <div class="flex-sm-column flex-md-row d-md-flex justify-content-center gap-2">
           
 
 
-    <div id="card-1" class="card  text-white p-1 col-md-4">
+    <div id="card-1" class="card  text-white p-2 col-md-4 m-2">
               <img
                 src="./images/project1.jpg"
-                class="img-fluid w-100 border border-0 rounded-2 m-0 gap-2 p-2"
+                class="img-fluid w-100 border border-0 rounded-2"
                 alt="E-Commerce APIr"
               />
         <div class="card-body">
@@ -196,10 +209,10 @@
         </div>
         </div>
 
-         <div id="card-2" class="card  text-white p-1 col-md-4">
+         <div id="card-2" class="card  text-white p-2 col-md-4 m-2">
               <img
                 src="./images/project1.jpg"
-                class="img-fluid w-100 border border-0 rounded-2 m-0 gap-2 p-2"
+                class="img-fluid w-100 border border-0 rounded-2"
                 alt="E-Commerce APIr"
               />
         <div class="card-body">
@@ -210,10 +223,10 @@
         </div>
         </div>
 
-         <div id="card-1" class="card  text-white p-1 col-md-4">
+         <div id="card-1" class="card  text-white p-2 col-md-4 m-2">
               <img
                 src="./images/project1.jpg"
-                class="img-fluid w-100 border border-0 rounded-2 m-0 gap-2 p-2"
+                class="img-fluid w-100 border border-0 rounded-2"
                 alt="E-Commerce APIr"
               />
         <div class="card-body">
@@ -226,8 +239,6 @@
 
 
       </section>
-
-<!-- my projects  main end -->
 
   <!-- tools -->
 
@@ -331,6 +342,8 @@
   </div>
 </footer>
     </section>
+
+    <script type="text/javascript" src="index.js"></script>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 
