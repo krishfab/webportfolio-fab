@@ -16,8 +16,9 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Fascinate+Inline&family=Great+Vibes&family=Limelight&family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Notable&family=Oi&family=Poetsen+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Distressed&family=Rubik+Spray+Paint&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -48,23 +49,29 @@
   </div>
 </nav>
 
+<!-- LANDING PAGE -->
+
 <section id="landing" class="container-fluid min-vh-100 d-flex align-items-center justify-content-center bg-dark text-white">
-  <div class="container py-5">
+  <video autoplay loop muted playsinline id="background-clip">
+  <source src="https://res.cloudinary.com/dcsinarma/video/upload/v1753890176/video1_qwjsxc.mp4" type="video/mp4" />
+</video>
+ <div class="position-absolute top-0 start-0 w-90 " id="overlay-bg"></div>
+  <div class="container" id="text-overlay">
     <div class="row align-items-center text-center text-md-start">
 
     
       <div class="col-12 col-md-5 mb-4 mb-md-0 order-1 order-md-2">
-        <img id="mypicture" src="./images/Mypicture.png" class="img-fluid rounded-3" alt="Krisha's Picture">
+        <img id="mypicture" src="./images/Mypicture.png" class="img-fluid rounded-circle" alt="Krisha's Picture">
       </div>
 
       <!-- Introduction -->
       <div id="introduction" class="col-12 col-md-7 p-3 order-2 order-md-1">
-        <h1 id="header-landing" class="display-5 fw-bold">Krisha-Mae Fabonan</h1>
-        <h2 id="header2-lan" class="fs-4 text-info">Full Stack Web Developer</h2>
-        <p class="mt-3">
+        <h1 id="header-landing" class="display-5 fw-bold typing-text">KRISHA -MAE I. FABONAN</h1>
+        <h2 id="header2-lan" class="fs-4 text-info glow-text">Full Stack Web Developer</h2>
+        <p class="mt-3 fade-in glow-text">
           Hi! My name is Krisha, and I’m 27 years old, currently living in Quezon City. I’m a naturally curious person who loves stepping out of my comfort zone because I believe that true growth happens when we challenge ourselves. I’m passionate about exploring new ideas, places, and experiences, always eager to learn and grow.
         </p>
-        <p>
+        <p class="fade-in glow-text">
           This mindset has guided me throughout my diverse career—starting in customer service, sales and marketing, and administrative roles—where I developed strong communication, problem-solving, and organizational skills. Over time, my curiosity for technology and passion for continuous learning inspired me to pivot into the tech industry. Now, I’m focused on building a career where I can combine my people-centered experience with technical skills to create meaningful solutions and contribute to innovative teams.
         </p>
       </div>
@@ -73,212 +80,206 @@
   </div>
 </section>
 
+<!-- PROJECTS SECTION -->
 
-<section id="projects">
+<section id="projects"class="container-fluid p-0 text-dark position-relative">
+   <div class="carousel-wrapper p-5 text-dark">
+    <video autoplay loop muted playsinline id="background-clip-proj">
+  <source src="https://res.cloudinary.com/dcsinarma/video/upload/v1753890314/video2_nkpl2e.mp4" type="video/mp4" />
+</video>
+     
 
- <section id="myprojects1"class="container-fluid p-5 text-white">
-    <div class="row justify-content-center">
-      <h3 id="heading-projects" class="m-5 text-center">My Projects</h3>
-    <div class="flex-sm-column flex-md-row d-md-flex justify-content-center gap-2">
-          
-
-<!-- E-Commerce API -->
-    <div id="card-1"class="card text-white p-2 col-md-4 m-2">
-             <a href="https://github.com/krishfab/ECommerce-API/tree/master" target="_blank">
-             <img
-               src="./images/project3.jpg"
-               class="img-fluid w-100 border border-0 rounded-2"
-               alt="E-Commerce API"
-              />
-              </a>
-        <div class="card-body">
-        <h5 class="card-title">E-Commerce API (ACCOMPLISHED)</h5>
-         <p class="card-text">
-                  Dynamic E-Commerce Workflow Management. The system 
-                  featuers dynamic routes for order processing,
-                  real-time inventory updates, and secure user authentication.
-
-                  It also supports seamless automated order reporting and comprehensive product management. Documented Backend API published publicly using Postman.
+ <div id="carouselExampleCaptions" class="carousel slide mt-1" data-bs-ride="carousel"  data-bs-interval="3000" 
+     data-bs-pause="false">
+  <h3 id="heading-projects"class="text-center p-5">My Projects</h3>
+ 
+  <!-- CAROUSEL -->
+  <div class="carousel-inner">
+    <div class="carousel-item active text-center text-dark">
+        <img src="./images/project3.jpg" class="img-fluid w-90 border-0 rounded-2 d-block mx-auto" alt="E-Commerce API" />
+      <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center px-3 px-md-5"">
+        <h5 class="fs-6 fs-md-5">E-Commerce API</h5>
+        <p class="fs-6 d-none d-md-block">Dynamic E-Commerce Workflow Management. The system featuers dynamic routes for order processing,
+           real-time inventory updates, and secure user authentication. It also supports seamless automated 
+           order reporting and comprehensive product management. Documented Backend API published publicly using Postman. 
          </p>
-        </div>
-        </div>
+         <a href="https://github.com/krishfab/ECommerce-API/tree/master" target="_blank">Click Here </a>
+      </div>
+    </div>
 
-<!-- Course Booking API Documentation -->
-    <div id="card-2"class="card  text-white p-2 col-md-4 m-2">
-    <img src="./images/project2.jpg"
-     class="img-fluid w-100 border border-0 rounded-2 "
-     alt="Course Booking API Documentation" />
-  <div class="card-body">
-                <h5 class="card-title">Course Booking API Documentation (ON-GOING)</h5>
-                <p class="card-text">
-                  RESTful API for managing course enrollments, featuring user registration, authentication,and retrieval of user details. Supports course creation, updates, archiving, activation, and student enrollment. Publicly documented using Postman.
-                </p>
-              </div>
-            </div>
+    <div class="carousel-item">
+      <img src="./images/project2.jpg" class="img-fluid w-90 border-0 rounded-2 d-block mx-auto" alt="Course Booking API Documentation" />
+      <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center px-3 px-md-5"">
+        <h5 class="fs-6 fs-md-5">Course Booking API Documentation(ON-GOING)</h5>
+        <p class="fs-6 d-none d-md-block">RESTful API for managing course enrollments, featuring user registration, authentication,and retrieval of user details. 
+          Supports course creation, updates, archiving, activation, and student enrollment. Publicly documented using Postman.</p>
+      </div>
+    </div>
 
-<!-- Course Booking App -->
+    <div class="carousel-item">
+      <img src="./images/project3.png" class="img-fluid w-90 border-0 rounded-2 d-block mx-auto" alt="Course Booking App" />
+      <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center px-3 px-md-5"">
+        <h5 class="fs-6 fs-md-5">Course Booking App (ON-GOING)</h5>
+        <p class="fs-6 d-none d-md-block">A MERN-stack course enrollment system featuring user registration, authentication, and profile management. 
+           Authenticated users can create, update, archive, and activate courses. 
+           The platform also allows users to browse available courses and enroll seamlessly.</p>
+      </div>
+    </div>
 
-    <div id="card-1"class="card  text-white p-2 col-md-4 m-2">
-    <img src="./images/project3.png"
-         class="img-fluid w-100 border border-0 rounded-2"
-         alt="HVAC Technicians"  />
-             
-              <div class="card-body">
-                <h5 class="card-title">Course Booking App (ON-GOING)</h5>
-                <p class="card-text">
-                  A MERN-stack course enrollment system featuring user registration, authentication, and profile management. Authenticated users can create, update, archive, and activate courses. The platform also allows users to browse available courses and enroll seamlessly.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <div class="carousel-item">
+      <img src="./images/project1.jpg" class="img-fluid w-90 border-0 rounded-2 d-block mx-auto" alt="E-Commerce App" />
+      <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center px-3 px-md-5"">
+        <h5 class="fs-6 fs-md-5">E-Commerce App (ON-GOING)</h5>
+        <p class="fs-6 d-none d-md-block">MERN-E Commerce Platform. The platform features dynamic product catalog with filtering and sorting, 
+          real-time search,seamless cart updates,secure checkout, and a comprehensive admin dahsboard with 
+          real-time analytics and user management capabilitis.</p>
+      </div>
+    </div>
 
-<!-- my projects section 2 -->
+    <div class="carousel-item">
+      <img src="./images/Airlinebooking.jpg" class="img-fluid w-90 border-0 rounded-2 d-block mx-auto" alt="Airline Booking Mockup" />
+      <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center px-3 px-md-5"">
+        <h5 class="fs-6 fs-md-5">Airline Booking System Mockup</h5>
+        <p class="fs-6 d-none d-md-block">Side Projects: Conceptual design showcasing an intuitive UI for flight search, seat selection, and 
+          booking confirmation, focusing on user experience and workflow efficiency.</p>
+          <a href="https://github.com/AlvinJohnB/MCP-Side-Project" target="_blank"> Click Here </a>
+      </div>
+    </div>
 
-<section id="myprojects2"class="container-fluid text-white p-5">
-    <div class="row justify-content-center">
-    <div class="flex-sm-column flex-md-row d-md-flex justify-content-center gap-2">
-          
+    <div class="carousel-item">
+      <img src="./images/project3.png" class="img-fluid w-90 border-0 rounded-2 d-block mx-auto" alt="Short Course Capstone" />
+      <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center px-3 px-md-5"">
+        <h5 class="fs-6 fs-md-5">Short Course Project (ON-GOING)</h5>
+        <p class="fs-6 d-none d-md-block">Placeholder for the upcoming short course project.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./images/project3.png" class="img-fluid w-90 border-0 rounded-2 d-block mx-auto" alt="Short Course Capstone" />
+      <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center px-3 px-md-5"">
+        <h5 class="fs-6 fs-md-5">Short Course Project (ON-GOING)</h5>
+        <p class="fs-6 d-none d-md-block">Placeholder for the upcoming short course project.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./images/project3.png" class="img-fluid w-90 border-0 rounded-2 d-block mx-auto" alt="Short Course Capstone" />
+      <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center">
+        <h5 class="fs-6 fs-md-5">Short Course Project (ON-GOING)</h5>
+        <p class="fs-6 d-none d-md-block">Placeholder for the upcoming short course project.</p>
+      </div>
+    </div>
+  </div>
 
-<!-- E-Commerce App -->
-    <div id="card-1" class="card text-white p-2 m-2 col-md-4 m-1">
-              <img
-                src="./images/project1.jpg"
-                class="img-fluid w-100 border border-0 rounded-2"
-                alt="E-Commerce APIr"
-              />
-        <div class="card-body">
-        <h5 class="card-title">E-Commerce App (ON-GOING)</h5>
-         <p class="card-text">
-                MERN-E Commerce Platform. The platform features dynamic product catalog with filtering and sorting, real-time search,seamless cart updates,secure checkout, and a comprehensive admin dahsboard with real-time analytics and user management capabilitis.
-         </p>
-        </div>
-        </div>
+  <!-- INDICATORS -->
 
-<!-- Airline Booking System Mockup-->
-    <div id="card-2" class="card text-white p-2 col-md-4 m-2">
-    <img src="./images/project2.jpg"
-     class="img-fluid w-100 border border-0 rounded-2"
-     alt="Course Booking API Documentation" />
-  <div class="card-body">
-                <h5 class="card-title">Airline Booking System Mockup (ON-GOING)</h5>
-                <p class="card-text">
-                 Side Projects: Conceptual design showcasing an intuitive UI for flight search, seat selection, and booking confirmation, focusing on user experience and workflow efficiency.
-                </p>
-              </div>
-            </div>
+  <div class="carousel-indicators justify-content-center text-dark">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+  </div>
 
-<!-- Airline Booking System Prototype -->
-
-    <div id="card-1"  class="card  text-white p-2 col-md-4 m-2">
-    <img src="./images/project3.png"
-         class="img-fluid w-100 border border-0 rounded-2"
-         alt="HVAC Technicians"  />
-             
-              <div class="card-body">
-                <h5 class="card-title">Airline Booking System Prototype (ON-GOING)</h5>
-                <p class="card-text">
-                  Side Project: Interactove prototype simulating end-to-end airline booking functionalities,
-                  including flight search, reservation, payment processing, and real-time ticket management.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-<!-- Short courses-->
-
- <section id="myprojects3"class="container-fluid p-5 text-white">
-    <div class="row justify-content-center">
-    <div class="flex-sm-column flex-md-row d-md-flex justify-content-center gap-2">
-          
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</section>
 
 
-    <div id="card-1" class="card  text-white p-2 col-md-4 m-2">
-              <img
-                src="./images/project1.jpg"
-                class="img-fluid w-100 border border-0 rounded-2"
-                alt="E-Commerce APIr"
-              />
-        <div class="card-body">
-        <h5 class="card-title">Short Courses Capstone (ON-GOING)</h5>
-         <p class="card-text">
-                 Placeholder for your Short courses capstone project.
-         </p>
-        </div>
-        </div>
-
-         <div id="card-2" class="card  text-white p-2 col-md-4 m-2">
-              <img
-                src="./images/project1.jpg"
-                class="img-fluid w-100 border border-0 rounded-2"
-                alt="E-Commerce APIr"
-              />
-        <div class="card-body">
-        <h5 class="card-title">Short Courses Capstone (ON-GOING)</h5>
-         <p class="card-text">
-                  Placeholder for your Short courses capstone project.
-         </p>
-        </div>
-        </div>
-
-         <div id="card-1" class="card  text-white p-2 col-md-4 m-2">
-              <img
-                src="./images/project1.jpg"
-                class="img-fluid w-100 border border-0 rounded-2"
-                alt="E-Commerce APIr"
-              />
-        <div class="card-body">
-        <h5 class="card-title">Short Courses Capstone (ON-GOING)</h5>
-         <p class="card-text">
-                  Placeholder for your Short courses capstone project.
-         </p>
-        </div>
-        </div>
-
-
-      </section>
-
-  <!-- tools -->
-
-  <section>
+  <!-- TOOLS -->
+<section style="position: relative; overflow: hidden;">
+  <video autoplay loop muted playsinline id="background-clip-tools">
+  <source src="./images/video3.mp4" type="video/mp4" />
+</video>
+<div id="overlay-bg4">
+  
 <div id="tools" class="container-fluid p-4 justify-content-center min-vh-100 min-wh-100 ">
   <div class="row">
-    <h1 id="toolsheader"class="text-center p-5">Tools</h1>
+    <h1 id="toolsheader"class="text-center p-5">TOOLS</h1>
     <!-- Front End -->
-    <div class="col-md-4 p-3 mt-3">
+    <div class="col-12 col-md-4 p-3 mt-3">
+        <!-- HEADER -->
       <h3 class="text-center">Front End</h3>
-      <img src="./images/tools1.png" class="img-fluid mb-3" alt="Image 1">
-      <img src="./images/tools2.png" class="img-fluid mb-3" alt="Image 2">
-      <img src="./images/tools3.png" class="img-fluid mb-3" alt="Image 3">
-      <img src="./images/tools4.png" class="img-fluid mb-3" alt="Image 4">
+      <div class="row">
+        <div class="col-6">
+      <img src="./images/6.png" class="img-fluid mb-3" alt="Image 1">
+      </div>
+        <div class="col-6">
+      <img src="./images/5.png" class="img-fluid mb-3" alt="Image 2">
+      </div>
+        <div class="col-6">
+      <img src="./images/7.png" class="img-fluid mb-3" alt="Image 3">
+      </div>
+        <div class="col-6">
+      <img src="./images/8.png" class="img-fluid mb-3" alt="Image 4">
+      </div>
+     </div>
     </div>
 
     <!-- Back End -->
-    <div class="col-md-4 gap-1 p-3 mt-3">
+    <div class="col-12 col-md-4 gap-1 p-3 mt-3">
+       <!-- HEADER -->
       <h3 class="text-center">Back End</h3>
-      <img src="./images/tools5.png" class="img-fluid mb-3" alt="Image 5">
-      <img src="./images/tools6.png" class="img-fluid mb-3" alt="Image 6">
-      <img src="./images/tools7.webp" class="img-fluid mb-3" alt="Image 7">
-      <img src="./images/tools8.svg" class="img-fluid mb-3" alt="Image 8">
+      <div class="row">
+        <div class="col-6">
+      <img src="./images/4.png" class="img-fluid mb-3" alt="Image 5">
+      </div>
+        <div class="col-6">
+      <img src="./images/3.png" class="img-fluid mb-3" alt="Image 6">
+      </div>
+        <div class="col-6">
+      <img src="./images/9.png" class="img-fluid mb-3" alt="Image 7">
+      </div>
+        <div class="col-6">
+      <img src="./images/10.png" class="img-fluid mb-3" alt="Image 8">
+      </div>
+ 
+    </div>
     </div>
 
     <!-- Other Tools -->
-    <div class="col-md-4 gap-1 p-3 mt-3">
+    <div class="col-12 col-md-4 gap-1 p-3 mt-3">
+      <!-- HEADER -->
       <h3 class="text-center">Other Tools</h3>
-      <img src="./images/tools9.png" class="img-fluid mb-3" alt="Image 9">
-      <img src="./images/tools10.webp" class="img-fluid mb-3" alt="Image 10">
-      <img src="./images/tools11.webp" class="img-fluid mb-3" alt="Image 11">
-      <img src="./images/tools 12.webp" class="img-fluid mb-3" alt="Image 12">
+      <div class="row">
+        <div class="col-6">
+      <img src="./images/1.png" class="img-fluid mb-3" alt="Image 9">
+        </div>
+        <div class="col-6">
+      <img src="./images/2.png" class="img-fluid mb-3" alt="Image 10">
+        </div>
+        <div class="col-6">
+      <img src="./images/11.png" class="img-fluid mb-3" alt="Image 11">
+        </div>
+        <div class="col-6">
+      <img src="./images/1.png" class="img-fluid mb-3" alt="Image 12">
+        </div>
     </div>
 
+
+
+     </div>
+     </div>
+</div>
     </section>
 
 <!-- contact section -->
     <section id="contact" class="container-fluid">
+      <video autoplay loop muted playsinline id="background-clip-contacts">
+  <source src="https://res.cloudinary.com/dcsinarma/video/upload/v1753890293/video5_lxtfer.mp4" type="video/mp4" />
+</video>
+<div>
        <h2 id="contact-header" class="text-white">Contact</h2>
       <div class="row">
           
@@ -291,43 +292,64 @@
       </div>
 
       <div class="col-12 col-md-6 p-5 d-flex flex-sm-column flex-md-row container-fluid">
-        <form class="p-0 container-fluid">
+        <form
+              id="contactform"
+              action="https://formspree.io/f/mnnzvoej" 
+              method="POST"
+              class="p-0 container-fluid"
+>
         <div class="form-group">
           <label for="name" class="text-white">Name</label>
-          <input type="text" name="name" placeholder="Your Name" class="form-control">
+          <input type="text" name="name" placeholder="Your Name" class="form-control glow-form">
           
         </div>
         <div class="mb-3 form-group">
           <label for="exampleInputEmail1" class="form-label text-white">Email address</label>
-          <input type="email" name="email" placeholder="Your Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <input type="email" name="email" placeholder="Your Email" class="form-control glow-form" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
        
         <div class="mb-3 form-group">
           <label for="message" class="text-white">Message</label>
-          <textarea class="form-control" id="message" rows="7"></textarea>
+          <textarea class="form-control glow-form" id="message" name="message" rows="7" placeholder="Your Message" required></textarea>
         </div>
-        <button id="submit-button" type="button" class="text-white btn d-flex d-inline-block ms-auto" data-bs-toggle="modal" data-bs-target="#contact-button">Submit</button>
+       <button id="submit-button" type="submit" class="text-white btn d-flex d-inline-block ms-auto">Submit</button>
       </form>
+      <div id="form-status" class="text-white mt-3"></div>
         
     </div>
     </div>
     <div class="p-3 gap-2 ">
       <div>
         <a href="https://www.linkedin.com/in/krishfab/" target="_blank">
-          <img src="./images/contact1.webp" alt="Footer Logo" class="footer-img animated-image mb-3">
+          <img src="./images/linkedin.png" alt="Footer Logo" class="footer-img animated-image mb-3">
 
         </a>
 
         <a href="https://github.com/krishfab" target="_blank">
-          <img src="./images/contact2.png" alt="Footer Logo" class="footer-img animated-image mb-3">
+          <img src="./images/github.png" alt="Footer Logo" class="footer-img animated-image mb-3">
          </a>
-        <a href="https://about.gitlab.com/free-trial/devsecops/?utm_medium=cpc&utm_source=bing&utm_campaign=brand_apac_pr_rsa_br_exact&utm_content=%2Ffree-trial%2Fdevsecops%2F&_bt&_bk=gitlab&_bm=e&_bn=o&_bg=1321614626779608&msclkid=17bae2200af3178a92828a070591ca81" target="_blank">
+        <!-- <a href="https://about.gitlab.com/free-trial/devsecops/?utm_medium=cpc&utm_source=bing&utm_campaign=brand_apac_pr_rsa_br_exact&utm_content=%2Ffree-trial%2Fdevsecops%2F&_bt&_bk=gitlab&_bm=e&_bn=o&_bg=1321614626779608&msclkid=17bae2200af3178a92828a070591ca81" target="_blank">
 
           <img src="./images/contact3.png" alt="Footer Logo" class="footer-img animated-image mb-3">
-           </a>
+           </a> -->
           </div>
         </div>
+      </div>
 </section>
+<!-- Success Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white border border-success">
+      <div class="modal-header">
+        <h5 class="modal-title" id="successModalLabel">Message Sent</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ✅ Thank you! Your message has been successfully sent.
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- footer -->
 
@@ -336,14 +358,44 @@
   <div class="container">
     <div class="row">
       <div class="col-12 m-0 p-0">
-        <p> Krisha -Mae Fabonan</p>
-        <p> Full Stack Web Developer </p>
-        <p>&copy; All rights reserved</p>
+        <p style="visibility: hidden;"> Krisha -Mae I. Fabonan</p>
+        <p class="mt-5"> Full Stack Web Developer </p>
+        <p >&copy; All rights reserved</p>
       </div>
     </div>
   </div>
 </footer>
     </section>
+    <script>
+  document.getElementById("contactform").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        form.reset();
+
+        // Show Bootstrap modal
+        const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+        successModal.show();
+      } else {
+        alert("⚠️ Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      alert("🚫 Network error. Please try again later.");
+    }
+  });
+</script>
 
     <script type="text/javascript" src="index.js"></script>
 
